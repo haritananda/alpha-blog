@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root 'pages#home' #Rails knows it is application_controller
+  get 'about',to:'pages#about' #Get the about page and then mention where to send this request
 end
